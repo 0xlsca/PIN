@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aero.Gen" Version="1.2.11" />
     <PackageReference Include="CommandLineParser" Version="2.9.1" />
     <PackageReference Include="Serilog.Settings.AppSettings" Version="2.2.2" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
@@ -27,6 +28,11 @@
     <ProjectReference Include="..\..\Lib\Shared.Udp\Shared.Udp.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="AeroMessages">
+      <HintPath>..\..\Lib\AeroMessages\AeroMessages.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <ItemGroup>
     <None Update="App.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
